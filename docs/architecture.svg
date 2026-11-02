@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 280" role="img">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 280" role="img" aria-label="Medallion architecture">
   <rect width="980" height="280" fill="#0f172a"/>
-  <g font-family="DM Sans, Segoe UI, sans-serif">
+  <g font-family="Segoe UI, Helvetica, Arial, sans-serif">
     <rect x="30" y="100" width="150" height="70" rx="12" fill="#1e293b" stroke="#334155"/>
     <text x="105" y="130" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Generator</text>
     <text x="105" y="150" text-anchor="middle" fill="#94a3b8" font-size="12">raw CSV</text>
@@ -25,6 +26,6 @@
     <text x="885" y="130" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">UI</text>
     <text x="885" y="150" text-anchor="middle" fill="#a5b4fc" font-size="12">:8091</text>
 
-    <text x="490" y="230" text-anchor="middle" fill="#818cf8" font-size="13">revenue_daily · funnel_daily · customer_ltv</text>
+    <text x="490" y="230" text-anchor="middle" fill="#818cf8" font-size="13">revenue_daily | funnel_daily | customer_ltv</text>
   </g>
 </svg>
