@@ -31,7 +31,7 @@ Generator ──CSV──► bronze/landing
                 Dashboard :8091
 ```
 
-![Architecture](docs/architecture.svg)
+![Architecture](docs/architecture.png)
 
 ### Layers
 
