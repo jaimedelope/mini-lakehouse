@@ -10,7 +10,7 @@ Complements the [streaming fraud pipeline](https://github.com/jaimedelope/stream
 
 **[mini-lakehouse-virid.vercel.app](https://mini-lakehouse-virid.vercel.app)**
 
-Static browser simulation of the medallion layers. Docker below is the real stack.
+Executive-style demo with **GMV, AOV, conversion funnel, LTV and pipeline health** — backed by simulated gold marts. Docker below is the real DuckDB + dbt stack.
 
 ## Architecture
 
@@ -69,7 +69,7 @@ docker-compose.yml
 
 ## Why it belongs on the portfolio
 
-Shows you can design a **small but real lakehouse**: landing zone, typed silver, gold marts, dbt, and an observability-style explorer — without needing Databricks/Snowflake credits.
+Shows you can design a **small but real lakehouse**: landing zone, typed silver, gold marts with stakeholder KPIs (revenue, conversion, LTV), dbt, and an executive explorer — without needing Databricks/Snowflake credits.
 
 ## Next ideas (v2)
 
