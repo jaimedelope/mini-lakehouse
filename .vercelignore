@@ -1,0 +1,13 @@
+.venv
+venv
+__pycache__
+generator
+ingest
+pipeline
+dbt_project
+dashboard
+docs
+docker-compose.yml
+requirements.txt
+README.md
+.git

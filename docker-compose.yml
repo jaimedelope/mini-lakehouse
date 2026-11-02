@@ -1,0 +1,34 @@
+services:
+  generator:
+    build: ./generator
+    environment:
+      DATA_DIR: /data
+      INTERVAL_SEC: "10"
+    volumes:
+      - lake-data:/data
+
+  pipeline:
+    build: ./pipeline
+    environment:
+      DATA_DIR: /data
+      DUCKDB_PATH: /data/lake.duckdb
+      INTERVAL_SEC: "12"
+    volumes:
+      - lake-data:/data
+      - ./dbt_project:/dbt:ro
+    depends_on:
+      - generator
+
+  dashboard:
+    build: ./dashboard
+    ports:
+      - "8091:8091"
+    environment:
+      DUCKDB_PATH: /data/lake.duckdb
+    volumes:
+      - lake-data:/data
+    depends_on:
+      - pipeline
+
+volumes:
+  lake-data:

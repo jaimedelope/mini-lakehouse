@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: bronze
+    schema: bronze
+    description: Raw landing tables loaded from CSV extracts.
+    tables:
+      - name: customers
+      - name: orders
+      - name: events
+      - name: pipeline_runs

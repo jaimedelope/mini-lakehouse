@@ -1,0 +1,18 @@
+name: mini_lakehouse
+version: 1.0.0
+config-version: 2
+profile: mini_lakehouse
+
+model-paths: ["models"]
+macro-paths: ["macros"]
+target-path: target
+clean-targets: [target, dbt_packages]
+
+models:
+  mini_lakehouse:
+    silver:
+      +schema: silver
+      +materialized: table
+    gold:
+      +schema: gold
+      +materialized: table

@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: customers
+    description: Cleaned customer dimension (typed timestamps, normalized email).
+    columns:
+      - name: customer_id
+        tests: [unique, not_null]
+  - name: orders
+    description: Cleaned orders fact with typed amounts and timestamps.
+  - name: events
+    description: Cleaned product events.

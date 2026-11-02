@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 280" role="img">
+  <rect width="980" height="280" fill="#0f172a"/>
+  <g font-family="DM Sans, Segoe UI, sans-serif">
+    <rect x="30" y="100" width="150" height="70" rx="12" fill="#1e293b" stroke="#334155"/>
+    <text x="105" y="130" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Generator</text>
+    <text x="105" y="150" text-anchor="middle" fill="#94a3b8" font-size="12">raw CSV</text>
+
+    <path d="M180 135 H230" stroke="#818cf8" stroke-width="2"/>
+    <rect x="230" y="100" width="150" height="70" rx="12" fill="#1e293b" stroke="#d97706"/>
+    <text x="305" y="130" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Bronze</text>
+    <text x="305" y="150" text-anchor="middle" fill="#94a3b8" font-size="12">DuckDB raw</text>
+
+    <path d="M380 135 H430" stroke="#818cf8" stroke-width="2"/>
+    <rect x="430" y="100" width="150" height="70" rx="12" fill="#1e293b" stroke="#cbd5e1"/>
+    <text x="505" y="130" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Silver</text>
+    <text x="505" y="150" text-anchor="middle" fill="#94a3b8" font-size="12">dbt clean</text>
+
+    <path d="M580 135 H630" stroke="#818cf8" stroke-width="2"/>
+    <rect x="630" y="100" width="150" height="70" rx="12" fill="#1e293b" stroke="#fbbf24"/>
+    <text x="705" y="130" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">Gold</text>
+    <text x="705" y="150" text-anchor="middle" fill="#94a3b8" font-size="12">marts</text>
+
+    <path d="M780 135 H820" stroke="#818cf8" stroke-width="2"/>
+    <rect x="820" y="100" width="130" height="70" rx="12" fill="#312e81" stroke="#818cf8"/>
+    <text x="885" y="130" text-anchor="middle" fill="#e2e8f0" font-size="14" font-weight="700">UI</text>
+    <text x="885" y="150" text-anchor="middle" fill="#a5b4fc" font-size="12">:8091</text>
+
+    <text x="490" y="230" text-anchor="middle" fill="#818cf8" font-size="13">revenue_daily · funnel_daily · customer_ltv</text>
+  </g>
+</svg>
