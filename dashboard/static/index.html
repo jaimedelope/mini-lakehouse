@@ -13,49 +13,50 @@
 <body>
   <div class="shell">
     <header class="top">
-      <div>
-        <p class="eyebrow">Medallion architecture</p>
-        <h1>Mini Lakehouse</h1>
-        <p class="sub">Bronze landing CSVs → DuckDB → dbt Silver/Gold models. A compact analytics lakehouse you can run locally.</p>
+      <div class="brand-block">
+        <p class="eyebrow">Executive analytics · medallion lakehouse</p>
+        <h1>Commerce intelligence</h1>
+        <p class="sub">
+          Gold marts built from Bronze → Silver → Gold. KPIs a stakeholder cares about:
+          revenue, conversion, AOV, LTV and pipeline health — powered by DuckDB + dbt.
+        </p>
       </div>
-      <div class="badge" id="status">waiting for first pipeline cycle…</div>
+      <div class="badge" id="status">waiting for gold marts…</div>
     </header>
 
-    <div class="flow">
-      <span class="chip">Generator</span><span class="arrow">→</span>
-      <span class="chip">Bronze CSV</span><span class="arrow">→</span>
-      <span class="chip">DuckDB ingest</span><span class="arrow">→</span>
-      <span class="chip">dbt silver/gold</span><span class="arrow">→</span>
-      <span class="chip">Explorer</span>
-    </div>
+    <section class="kpi-grid" id="kpiGrid"></section>
 
-    <section class="summary">
-      <article class="stat"><span>Bronze rows</span><strong id="bronzeRows">0</strong></article>
-      <article class="stat"><span>Silver rows</span><strong id="silverRows">0</strong></article>
-      <article class="stat"><span>Gold tables</span><strong id="goldTables">0</strong></article>
-      <article class="stat"><span>Paid revenue (gold)</span><strong id="revenue">€0</strong></article>
+    <section class="funnel-hero">
+      <div class="panel">
+        <h2>Revenue trend (gold.revenue_daily)</h2>
+        <div class="bars" id="revenueBars"></div>
+      </div>
+      <div class="panel">
+        <h2>Conversion funnel</h2>
+        <div class="funnel-steps" id="funnelSteps"></div>
+      </div>
     </section>
 
     <section class="medallion" id="layers"></section>
 
     <section class="grid">
       <div class="panel">
-        <h2>Gold · revenue_daily</h2>
-        <div id="revenueTable" class="empty">—</div>
+        <h2>Top customers by LTV</h2>
+        <div id="ltvTable" class="empty">—</div>
       </div>
       <div class="panel">
-        <h2>Gold · customer_ltv (top)</h2>
-        <div id="ltvTable" class="empty">—</div>
+        <h2>Revenue by country</h2>
+        <div id="countryBars" class="empty">—</div>
       </div>
     </section>
 
-    <section class="grid" style="margin-top:14px">
+    <section class="grid">
       <div class="panel">
-        <h2>Gold · funnel_daily</h2>
-        <div id="funnelTable" class="empty">—</div>
+        <h2>Daily revenue detail</h2>
+        <div id="revenueTable" class="empty">—</div>
       </div>
       <div class="panel">
-        <h2>Pipeline runs</h2>
+        <h2>Pipeline reliability</h2>
         <div id="runsTable" class="empty">—</div>
       </div>
     </section>
