@@ -8,7 +8,7 @@ Complements the [streaming fraud pipeline](https://github.com/jaimedelope/stream
 
 ## Live demo
 
-**[mini-lakehouse.vercel.app](https://mini-lakehouse.vercel.app)** *(or the project alias Vercel assigns)*
+**[mini-lakehouse-virid.vercel.app](https://mini-lakehouse-virid.vercel.app)**
 
 Static browser simulation of the medallion layers. Docker below is the real stack.
 
